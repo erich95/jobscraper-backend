@@ -1,11 +1,7 @@
 package it.scraper.jobscraper.entity;
 
-
 import jakarta.persistence.*;
 import lombok.*;
-
-
-
 @Getter
 @Setter
 @Builder
@@ -14,7 +10,6 @@ import lombok.*;
 @Table(name = "jobOffer")
 @Entity
 public class JobOffer {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -31,7 +26,4 @@ public class JobOffer {
     private String telephoneNumber;
     private String jobOfferUrl;
     private String jobOfferDate;
-
-
-
 }

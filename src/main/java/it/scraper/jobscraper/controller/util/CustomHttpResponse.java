@@ -1,6 +1,4 @@
 package it.scraper.jobscraper.controller.util;
-
-import org.aspectj.bridge.Message;
 import org.springframework.http.HttpStatus;
 
 public class CustomHttpResponse {

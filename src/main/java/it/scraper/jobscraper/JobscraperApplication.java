@@ -16,11 +16,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import java.util.List;
 
-
-/*@ComponentScan(basePackages = {"it.scraper.jobscraper"})*/
 @EntityScan("it.scraper.jobscraper.entity")
 @EnableJpaRepositories("it.scraper.jobscraper.repository")
-/*@ComponentScan(basePackageClasses = {JobOfferService.class, JobOfferController.class})*/
 @SpringBootApplication(scanBasePackages = {"it.scraper.jobscraper.controller", "it.scraper.jobscraper.service"})
 public class JobscraperApplication extends SpringBootServletInitializer {
 
